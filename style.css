@@ -1,0 +1,737 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+
+
+section {
+    display: grid;
+    height: 100vh;
+
+}
+
+button {
+    border: none;
+    outline: none;
+    border-radius: 1px;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 3;
+    background-color: rgba(255, 255, 255, 0.856);
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    color: black;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+#logo img {
+    height: 30px;
+}
+
+#menu img {
+    height: 35px;
+}
+
+header #menu {
+    align-self: center;
+    height: 35px;
+}
+
+.nav-menu {
+    font-weight: 500;
+    font-size: 25px;
+    display: none;
+}
+
+.nav-menu a {
+    margin: 20px 0px;
+    color: black;
+}
+
+.container-banner {
+    margin-top: 50px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    height: 30vh;
+}
+
+.container-banner img {
+    min-width: 300px;
+    filter: brightness(.5);
+    position: absolute;
+    width: 100%;
+    height: 30vh;
+}
+
+.container-banner>h4, h2, button {
+    color: white;
+    position: relative;
+    z-index: 1;
+}
+
+.container-banner button {
+    background-color: rgb(141, 189, 69);
+    font-weight: 700;
+    font-size: 12px;
+    padding: 2px 10px;
+}
+
+.destination-text h4 {
+    font-family: "Pacifico", cursive;
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: rgb(226, 155, 24);
+    font-style: italic;
+}
+
+.form {
+    display: none;
+    height: 40px;
+}
+
+.container-travels {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-travels div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    height: 220px;
+    width: 250px;
+}
+
+.container-travels img {
+    box-shadow: 0px 0px 15px #191919;
+    border-radius: 4px;
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    z-index: 0;
+}
+
+.container-travels h4 {
+    font-size: 20px;
+    color: white;
+    position: relative;
+    z-index: 1;
+}
+
+.card-travels p {
+    border: 1px dashed rgba(255, 255, 255, 0.699);
+    padding: 0px 5px;
+    font-size: 15px;
+    color: white;
+    position: relative;
+    z-index: 0;
+}
+
+.container-holiday {
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.holiday-text {
+    width: 100%;
+
+}
+
+.holiday-text h4 {
+    font-family: "Pacifico", cursive;
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: rgb(226, 155, 24);
+    font-style: italic;
+}
+
+.holiday-text h3 {
+    font-size: 30px;
+}
+
+.container-holiday span {
+    color: orange;
+
+}
+
+.holiday-images {
+    margin-top: 20px;
+}
+
+.holiday-images img {
+    width: 300px;
+}
+
+.container-holiday button {
+    font-weight: 700;
+    margin: 10px 0px;
+    padding: 3px 10px;
+    font-size: 13px;
+    background-color: #292929;
+    letter-spacing: 1px;
+}
+
+.container-vacation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 35vh;
+}
+
+.container-vacation img {
+    position: absolute;
+    filter: brightness(.4);
+    z-index: 0;
+    height: 30vh;
+    width: 100%;
+}
+
+.container-vacation h4 {
+    font-family: "Pacifico", cursive;
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: rgb(226, 155, 24);
+    font-style: italic;
+    position: relative;
+    z-index: 1;
+}
+
+.container-vacation h3 {
+    font-size: 40px;
+    letter-spacing: 1px;
+    color: white;
+    position: relative;
+    z-index: 1;
+}
+
+.container-vacation p {
+    font-size: 15 px;
+    color: white;
+    position: relative;
+    z-index: 1;
+}
+
+.vacation-video {
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.vacation-video video {
+    position: relative;
+    z-index: 1;
+    width: 90%;
+}
+
+.destination {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0px;
+}
+
+.destination-imgs {
+
+    display: flex;
+    flex-direction: column;
+}
+
+.destination-text {
+    text-align: center;
+}
+
+.destination p, h3 {
+    color: black;
+}
+
+.destination h3 {
+    font-size: 30px;
+}
+
+.destination1 {
+    margin: 90px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.destination1 img {
+    filter: brightness(.7);
+    position: absolute;
+    clip-path: circle(50%);
+    height: 200px;
+}
+
+.destination1 h3 {
+    position: relative;
+    font-size: 25px;
+    color: white;
+}
+
+.offer {
+    position: relative;
+    height: 25vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.offer img {
+    position: absolute;
+    width: 100%;
+    height: 25vh;
+    filter: brightness(.5);
+}
+
+.offer h3, h4, button {
+    position: relative;
+}
+
+.offer h4 {
+    color: rgb(226, 155, 24);
+    font-family: "Pacifico", cursive;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.offer h3 {
+    color: white;
+    font-size: 30px;
+}
+
+.offer button {
+    background-color: rgb(141, 189, 69);
+    padding: 2px 10px;
+}
+
+.tour-gallery {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.gallery-text {
+    padding: 15px;
+    text-align: center;
+}
+
+.gallery-text h4 {
+    font-style: italic;
+    font-family: "Pacifico", cursive;
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: rgb(226, 155, 24);
+}
+
+.gallery-text h3 {
+    font-size: 40px;
+}
+
+.gallery img {
+    height: 200px;
+    margin: 10px 0px;
+}
+
+footer {
+    padding: 15px;
+    background-color: rgb(243, 243, 243);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+footer h4 {
+    color: rgb(226, 155, 24);
+    font-size: 15px;
+    font-style: italic;
+}
+
+footer h3 {
+    font-size: 30px;
+}
+
+footer>div {
+    display: flex;
+}
+
+footer div img {
+    height: 30px;
+}
+
+footer>.links a {
+    margin: 0px 5px;
+}
+
+@keyframes opacity {
+    0% {
+        z-index: 0;
+        opacity: 0;
+        transform: scale(.5);
+    }
+
+    100% {
+        z-index: 1;
+        opacity: 1;
+    }
+}
+
+@media (min-width:767px) {
+    header {
+        height: 70px;
+    }
+
+    #logo {
+        font-size: 30px;
+    }
+
+    #logo img {
+        height: 55px;
+    }
+
+    #menu img {
+        height: 55px;
+    }
+
+    header #menu {
+        align-self: center;
+        height: 55px;
+    }
+
+    .container-banner {
+        margin-top: 70px;
+        height: 40vh;
+    }
+
+    .container-banner h4 {
+        font-size: 30px;
+    }
+
+    .container-banner h2 {
+        font-size: 50px;
+    }
+
+    .container-banner button {
+        font-size: 20px;
+    }
+
+    .container-banner img {
+        height: 40vh;
+        width: 100%;
+    }
+
+    .container-travels {
+        display: grid;
+        grid-template-areas:
+            "card-travel1 card-travel2"
+            "card-travel3 card-travel4"
+        ;
+    }
+
+    .container-travels div {
+        height: 300px;
+        width: 300px;
+    }
+
+    .container-travels div img {
+        height: 250px;
+        width: 250px;
+    }
+
+    .holiday-images {
+        width: 100%;
+        display: grid;
+        grid-template-areas:
+            "holiday1 holiday2"
+            "holiday3 holiday4"
+            "holiday5 holiday6"
+        ;
+        place-items: space-evenly;
+    }
+
+    .container-holiday button {
+        font-size: 20px;
+    }
+
+    .destination {
+        margin-top: 30px;
+        height: 45vh;
+    }
+
+    .destination-text p {
+        font-weight: 500;
+        font-size: 16px;
+    }
+
+    .destination1 {
+        width: 200px;
+    }
+
+    .destination-imgs {
+        margin-top: 20px;
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .vacation-video {
+        height: 60vh;
+    }
+
+    .offer h3 {
+        font-size: 40px;
+    }
+
+    .offer h4 {
+        font-size: 30px;
+    }
+
+    .offer button {
+        font-size: 17px;
+    }
+
+    .gallery {
+        display: grid;
+        grid-template-areas:
+            "img1 img2"
+        ;
+        place-content: center;
+        place-items: center;
+        gap: 15px;
+    }
+
+    .gallery img {
+        margin: 0px;
+    }
+
+    footer {
+        margin-top: 15px;
+    }
+
+    footer h4 {
+        font-size: 20px;
+    }
+
+    footer h3 {
+        font-size: 40px;
+    }
+
+    footer P {
+        font-weight: 500;
+    }
+}
+
+@media (min-width:1024px) {
+    section {
+        grid-template-areas:
+            "header nav-menu"
+            "main main"
+            "container-travels container-travels"
+            "container-holiday container-holiday"
+            "container-vacation container-vacation"
+            "vacation-video vacation-video"
+            "destination destination"
+            "offer offer"
+            "tour-gallery tour-gallery"
+            "contact contact"
+        ;
+    }
+
+    header {
+        height: 50px;
+        grid-area: header;
+        position: static;
+        align-items: center;
+    }
+
+    header>a>img {
+        margin-right: 10;
+        height: 30px;
+    }
+
+    header #logo {
+
+        font-size: 20px;
+    }
+
+    header #logo img {
+        height: 30px;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    .nav-menu {
+        align-items: center;
+        grid-area: nav-menu;
+        width: 100%;
+        position: static;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .nav-menu a {
+        font-size: 20px;
+        margin: 0px 10px;
+        position: relative;
+        z-index: 4;
+    }
+
+    .container-banner {
+        height: 70vh;
+        margin-top: 0px;
+        grid-area: main;
+    }
+
+    .container-banner img {
+        height: 70vh;
+    }
+
+    .container-travels {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: row;
+        grid-area: container-travels;
+    }
+
+    .container-holiday {
+        grid-area: container-holiday;
+    }
+
+    .holiday-images {
+        display: grid;
+        grid-template-areas:
+            ". . . ";
+        flex-wrap: wrap;
+        place-items: center;
+        place-content: space-evenly;
+    }
+
+    .holiday-images>div>img {
+        height: 250px;
+        width: 350px;
+    }
+
+    .container-vacation {
+        height: 60vh;
+        grid-area: container-vacation;
+    }
+
+    .container-vacation h3 {
+        font-size: 60px;
+    }
+
+    .container-vacation p {
+        font-size: 20px;
+    }
+
+    .container-vacation img {
+        height: 60vh;
+    }
+
+    .vacation-video {
+        height: 70vh;
+        grid-area: vacation-video;
+    }
+
+    .vacation-video video {
+        height: 600px;
+        width: 900px;
+    }
+
+    .destination {
+        grid-area: destination;
+    }
+
+    .destination-text>h4 {
+        font-size: 25px;
+    }
+
+    .destination-text h3 {
+        font-size: 45px;
+    }
+
+    .destination p {
+        font-size: 20px;
+    }
+
+    .offer {
+        margin-top: 20px;
+        height: 50vh;
+        grid-area: offer;
+    }
+
+    .offer img {
+        height: 50vh;
+    }
+
+    .tour-gallery {
+        grid-area: tour-gallery;
+    }
+
+    .gallery {
+        display: grid;
+        grid-template-areas:
+            ". . ."
+        ;
+    }
+
+    footer {
+        grid-area: contact;
+    }
+}

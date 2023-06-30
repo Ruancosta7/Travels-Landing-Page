@@ -1,0 +1,127 @@
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    @media(max-width:1023px) {
+        .opacity {
+            animation: opacity 1s ease forwards;
+        }
+
+        .opacity-img {
+            filter: brightness(.5) blur(.7px);
+        }
+    }
+
+    @media(min-width:1023px) {
+        .opacity2 {
+            animation: opacity 1s ease forwards;
+        }
+
+        .opacity-img2 {
+            filter: brightness(.5) blur(.7px);
+        }
+
+        .nav-menu :hover {
+            border-bottom: 1px solid rgb(0, 0, 0);
+        }
+    }
+
+    .remove-bg {
+        background-color: transparent;
+    }
+
+    .nav-menu-event {
+        background-color: rgba(248, 248, 255, 0.856);
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 100vw;
+        z-index: 2;
+    }
+
+    .nav-menu-a-event {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 3;
+    }
+
+    .display {
+        display: none;
+    }
+
+    .nav-animation {
+        animation: left-right .6s ease-in-out;
+    }
+
+    @keyframes left-right {
+        0% {
+            transform: translateX(-100px);
+            opacity: 0;
+        }
+    }
+
+    @keyframes right-left {
+        0% {
+            transform: translateX(200px);
+        }
+    }
+
+    .nav-menu {
+        animation: right-left 1s ease;
+    }
+
+    #logo {
+        animation: left-right 1s ease;
+    }
+
+    main h2, h4, button {
+        animation: growing 1.5s ease-out;
+    }
+
+    .card1 {
+        animation: growing .7s ease-out;
+    }
+
+    .card2 {
+        animation: growing 1s ease-out;
+    }
+
+    .card3 {
+        animation: growing 1.4s ease-out;
+    }
+
+    .card4 {
+        animation: growing 2s ease-out;
+    }
+
+    @keyframes growing {
+        0% {
+            transform: scale(.2);
+        }
+    }
+
+    button:active {
+        transform: scale(.9);
+        transition: 100ms;
+        transform: skew(80px);
+    }
+
+    .links img:active {
+        transform: scale(.7);
+        transition: 200ms;
+    }
+
+
+    .nav-menu :active {
+        transform: scale(.8);
+        transition: 500ms;
+    }
